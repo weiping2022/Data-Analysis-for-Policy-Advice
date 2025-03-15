@@ -1,0 +1,67 @@
+LOG|INFO|2023-06-11 19:08:32|Credentials file found
+LOG|INFO|2023-06-11 19:08:32|Credentials loaded
+LOG|INFO|2023-06-11 19:08:32|Token received
+LOG|INFO|2023-06-11 19:08:32|RTE Function defined
+LOG|INFO|2023-06-11 19:08:33|RTE data loaded from local file
+LOG|INFO|2023-06-11 19:08:35|RTE data enriched with CO2 intensity
+LOG|INFO|2023-06-11 19:08:35|SMARD function defined
+LOG|INFO|2023-06-11 19:08:35|SMARD DE parameters defined
+LOG|INFO|2023-06-11 19:08:35|SMARD DE initial dataframe created
+LOG|INFO|2023-06-11 19:08:52|SMARD DE data loaded
+LOG|INFO|2023-06-11 19:08:52|SMARD DE data edited and saved to local file
+LOG|INFO|2023-06-11 19:08:52|SMARD AT parameters defined
+LOG|INFO|2023-06-11 19:08:52|SMARD AT initial dataframe created
+LOG|INFO|2023-06-11 19:09:02|SMARD AT data loaded
+LOG|INFO|2023-06-11 19:09:02|SMARD AT data edited and saved to local file
+LOG|INFO|2023-06-11 19:09:03|SMARD data prepared for further processing
+LOG|INFO|2023-06-11 19:09:03|SMARD data ready for co2 mapping
+LOG|INFO|2023-06-11 19:09:03|SMARD data enriched with CO2 intensity
+LOG|INFO|2023-06-11 19:09:03|SMARD data added average CO2 emission per kwH
+LOG|INFO|2023-06-11 19:09:08|Token received
+LOG|ERROR|2023-06-11 19:09:09|Error while loading Terna data Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/opt/anaconda3/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/anaconda3/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/folders/4r/tcytcqc56n3bcqfhnmthgtf80000gn/T/ipykernel_26901/2323147510.py", line 18, in <cell line: 1>
+    data = response.json()
+  File "/opt/anaconda3/lib/python3.9/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+LOG|INFO|2023-06-11 19:09:10|Terna data prepared for further processing
+LOG|INFO|2023-06-11 19:09:10|Terna data enriched with CO2 intensity
+LOG|INFO|2023-06-11 19:09:10|Terna data added average CO2 emission per kwH
+LOG|INFO|2023-06-11 19:09:10|DE & AT Data prepared to be concatenated
+LOG|INFO|2023-06-11 19:09:10|FR Data prepared to be concatenated
+LOG|INFO|2023-06-11 19:09:10|IT Data prepared to be concatenated
+LOG|INFO|2023-06-11 19:09:10|Data concatenated and saved to local file
+LOG|INFO|2023-06-11 19:09:10|FR Data enriched with proportion of electricity generation
+LOG|INFO|2023-06-11 19:09:10|DE Data enriched with proportion of electricity generation
+LOG|INFO|2023-06-11 19:09:10|AT Data enriched with proportion of electricity generation
+LOG|INFO|2023-06-11 19:09:10|IT Data enriched with proportion of electricity generation
+LOG|INFO|2023-06-11 19:09:11|Data concatenated and saved to local file
+LOG|INFO|2023-06-11 19:09:11|Electricity data for Switzerland loaded
+LOG|INFO|2023-06-11 19:09:11|Electricity data for Switzerland edited
+LOG|INFO|2023-06-11 19:09:11|Trade data for Switzerland loaded
+LOG|INFO|2023-06-11 19:09:12|Trade import data for Switzerland edited
+LOG|INFO|2023-06-11 19:09:12|Trade export data for Switzerland edited
+LOG|INFO|2023-06-11 19:09:12|Trade data for Switzerland merged
+LOG|INFO|2023-06-11 19:09:12|Trade data for Switzerland edited
+LOG|INFO|2023-06-11 19:09:12|SMARD DE Marketdata parameters defined
+LOG|INFO|2023-06-11 19:09:16|SMARD DE Marketdata loaded
+LOG|INFO|2023-06-11 19:09:16|SMARD DE Marketdata edited and saved to local file
+LOG|INFO|2023-06-11 19:09:16|SMARD DE Marketdata converted to long table
+LOG|INFO|2023-06-11 19:09:16|SMARD DE Marketdata enriched with CO2 intensity
+LOG|INFO|2023-06-11 19:09:16|average CO2 intensity of electricity generation from DE, FR, IT, AT from 1990 to 2016 is created
+LOG|INFO|2023-06-11 19:09:16|CO2 baseline created
+LOG|INFO|2023-06-11 19:09:16|CO2 intensity difference between actual and baseline calculated
